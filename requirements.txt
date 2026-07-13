@@ -1,0 +1,25 @@
+# Core scientific stack
+numpy>=1.26,<3.0
+pandas>=2.1,<3.0
+scikit-learn>=1.4,<2.0
+scipy>=1.11
+
+# Schema validation
+pydantic>=2.5,<3.0
+
+# UI
+streamlit>=1.30
+
+# HTTP client (Ollama)
+requests>=2.31
+
+# Plotting / inspection (optional but used in notebooks)
+matplotlib>=3.8
+
+# PDF/Doc handling for thesis pipeline (optional)
+python-docx>=1.1
+
+# Reproducibility note: run `pip freeze > requirements.lock.txt` after
+# installation to capture exact pinned versions for the final submission.
+
+huggingface-hub>=0.30.0
