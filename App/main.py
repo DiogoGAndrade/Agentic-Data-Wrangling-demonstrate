@@ -427,7 +427,7 @@ with st.sidebar:
     dataset_name = st.text_input("Dataset name", "My Dataset",
                                   help="A friendly label, used in exported filenames.")
     uploaded = st.file_uploader("Upload a CSV file", type=["csv"],
-                                 help="Drag & drop or browse. Max 200 MB.")
+                                 help="Drag & drop or browse. Max 10 MB.")
 
     # 2. File format
     st.markdown("#### File format")
