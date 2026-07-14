@@ -11,8 +11,8 @@ font = "sans serif"
 
 [server]
 # Upload limit: raw file the user can send to the server.
-maxUploadSize = 1024
+maxUploadSize = 10
 # Message limit: data the server pushes to the browser per websocket message.
 # This is what triggered "MessageSizeError ... exceeds 200 MB". We raise it AND
 # only ever send a bounded preview to the browser (see PREVIEW_ROWS in main.py).
-maxMessageSize = 1024
+maxMessageSize = 10
