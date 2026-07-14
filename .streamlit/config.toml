@@ -1,0 +1,18 @@
+[theme]
+# Force a light theme regardless of the user's OS / browser dark-mode setting.
+# Without this, Streamlit inherits the OS theme and passes it into internal
+# components (dataframe iframe, tabs, metrics) that page-level CSS cannot reach.
+base = "light"
+primaryColor = "#1f3864"
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f7f9fc"
+textColor = "#1a2332"
+font = "sans serif"
+
+[server]
+# Upload limit: raw file the user can send to the server.
+maxUploadSize = 1024
+# Message limit: data the server pushes to the browser per websocket message.
+# This is what triggered "MessageSizeError ... exceeds 200 MB". We raise it AND
+# only ever send a bounded preview to the browser (see PREVIEW_ROWS in main.py).
+maxMessageSize = 1024
